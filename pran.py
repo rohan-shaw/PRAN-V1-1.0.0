@@ -181,14 +181,14 @@ def get_time():
 def send_email(recipient, subject, body):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login('services.rohanshaw@gmail.com', 'befxueqkeifoatgh')
+    server.login('email', 'password')
     message = f"Subject: {subject}\n\n{body}"
-    server.sendmail('services.rohanshaw@gmail.com', recipient, message)
+    server.sendmail('email', recipient, message)
     server.quit()
 
 # Function to get the weather
 def get_weather(city):
-    api_key = 'c1da22dec85a659da4043a3d9829a400'
+    api_key = 'api_key'
     base_url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
     response = requests.get(base_url)
     data = response.json()
