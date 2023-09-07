@@ -3,7 +3,7 @@ Meet PRAN - A custom jarvis for yourself.
 
 ## Features
 * Face recognition
-* Securitu
+* Security
 * Tasks
 * Google Search
 * More
